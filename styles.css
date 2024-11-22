@@ -14,7 +14,7 @@ h1 , h2{color: #56B2C5;
 
 header {
 
-    background-image:url(/datascience.png) ;
+    background-image:url(./datascience.png) ;
     background-repeat:no-repeat;
     background-size: contain;
     background-size: cover;
