@@ -2,56 +2,84 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color:white;
+    background-color: white;
     color: #333;
-
-}
-h1 , h2{color: #56B2C5;
-    
 }
 
-
+h1, h2 {
+    color: #56B2C5;
+}
 
 header {
-
-    background-image:url(./datascience.png) ;
-    background-repeat:no-repeat;
-    background-size: contain;
+    background-image: url(./datascience.png);
+    background-repeat: no-repeat;
     background-size: cover;
-    color:white;
-    text-align:center;
+    color: white;
+    text-align: center;
     padding: 30px 0;
 }
+
 nav {
-    background-color:#56B2C5;
+    background-color: #56B2C5;
     padding: 10px;
     text-align: center;
 }
+
 nav a {
     color: white;
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
 }
+
+nav a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
 .container {
     width: 80%;
     margin: 20px auto;
 }
+
+.presentation {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.moi {
+    background-color: #56B2C5;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    border-color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 40%;
+}
+
 .projets {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 20px;
 }
+
 .projet {
     background-color: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 30%;
+    transition: all 0.3s ease;
 }
+
+.projet:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
 .skills ul {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     margin: 0 15px;
     padding: 10px;
     text-decoration: none;
@@ -62,3 +90,16 @@ nav a {
     margin-bottom: 10px;
 }
 
+@media (max-width: 768px) {
+    .presentation {
+        flex-direction: column;
+    }
+
+    .moi, .projet {
+        width: 100%;
+    }
+
+    .projets {
+        flex-direction: column;
+    }
+}
